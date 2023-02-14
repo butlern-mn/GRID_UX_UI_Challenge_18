@@ -1,0 +1,237 @@
+body {
+    background-color: rgba(216, 162, 18, 0.5);
+}
+
+header {
+    border-bottom-color: #013863;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarmenu {
+    display: flex;
+}
+
+button.navbarbutton {
+    border: solid;
+    border-color: #013863;
+    height: 30px;
+    width: 90px;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Acme;
+    margin: 25px;
+    cursor: pointer;
+    background-color: #007b84;
+}
+
+#containerGrid {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+        "topLeft topLeft topRight topRight"
+        "topLeft topLeft topRight topRight"
+        "topLeft topLeft topRight topRight"
+        "bottomLeft bottomLeft bottomRight bottomRight";
+}
+
+#topLeft {
+    grid-area: topLeft;
+    display: grid;
+    position: static;
+    margin-top: -50px;
+    justify-content: start;
+    align-content: center;
+    text-align: center;
+}
+
+#topRight {
+    grid-area: topRight;
+    display: grid;
+    position: static;
+    justify-content: center;
+    align-content: center;
+}
+
+#bottomLeft {
+    grid-area: bottomLeft;
+    display: grid;
+    position: static;
+    justify-content: center;
+    align-content: center;
+}
+
+#bottomRight {
+    grid-area: bottomRight;
+    display: grid;
+    position: static;
+    justify-content: center;
+    align-content: center;
+}
+
+.headshot {
+    position: static;
+    justify-content: start;
+    align-content: center;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.AboutMe {
+    position: static;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.AboutMe h1 {
+    font-family: Acme;
+    font-size: 48px;
+    font-style: normal;
+    color: black;
+}
+
+.AboutMe h2 {
+    font-family: Arimo;
+    font-size: 24px;
+    font-style: normal;
+    color: black;
+}
+
+.AboutMe p {
+    font-family: Arimo;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Acme;
+    margin-top: 30px;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 58px;
+    width: 252px;
+    cursor: pointer;
+    background-color: #007b84;
+}
+
+.CaseStudy1, .CaseStudy2, .CaseStudy3 {
+    height: auto;
+    max-width: 735px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid;
+    border-color: #013863;
+    color: black;
+    padding: 2%;
+    margin-bottom: 20px;
+}
+
+.CaseStudy1 {
+    margin-top: 20px;
+}
+
+.CaseStudyText h1 {
+    text-align: left;
+    font-family: Arimo;
+    font-size: 24px;
+    font-style: bold;
+    }
+
+.CaseStudyText p {
+    text-align: left;
+    font-family: Arimo;
+    font-size: 16px;
+    font-style: normal;
+    }
+
+.CaseStudyImg {
+    justify-content: end;
+    height: auto;
+    width: auto;
+}
+
+#bottomLeft {
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+#bottomRight {
+    justify-content: center;
+    align-content: center;
+    max-width: 735px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #013863;
+    }
+
+.Copyright {
+    font-family: Arimo;
+    font-size: 16px;
+    font-style: bold;
+    color: white;
+    width: 40%;
+    text-align: center;
+    }
+
+.FooterLinkedText {
+    display: flex;
+}
+
+.FooterLinkedText a {
+    font-family: Arimo;
+    font-size: 16px;
+    font-style: bold;
+    color: white;
+    padding: 16px;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .containerGrid {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 500px;
+        grid-template-areas: 
+        "topLeft"
+        "topRight"
+        "bottomLeft"
+        "bottomRight";
+    }
+}
