@@ -1,5 +1,6 @@
 body {
     background-color: rgba(216, 162, 18, 0.5);
+    margin: 0px !important;
 }
 
 header {
@@ -39,64 +40,30 @@ button.navbarbutton {
     margin-left: 3%;
     margin-right: 3%;
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 3fr 1fr;
-    grid-template-areas: 
-        "topLeft topLeft topRight topRight"
-        "topLeft topLeft topRight topRight"
-        "topLeft topLeft topRight topRight"
-        "bottomLeft bottomLeft bottomRight bottomRight";
-}
-
-#topLeft {
-    grid-area: topLeft;
-    display: grid;
-    position: static;
-    margin-top: -50px;
-    justify-content: start;
-    align-content: center;
-    text-align: center;
-}
-
-#topRight {
-    grid-area: topRight;
-    display: grid;
-    position: static;
-    justify-content: center;
-    align-content: center;
-}
-
-#bottomLeft {
-    grid-area: bottomLeft;
-    display: grid;
-    position: static;
-    justify-content: center;
-    align-content: center;
-}
-
-#bottomRight {
-    grid-area: bottomRight;
-    display: grid;
-    position: static;
-    justify-content: center;
-    align-content: center;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .headshot {
-    position: static;
     justify-content: start;
     align-content: center;
-    height: auto;
-    width: auto;
+    width: 100%;
     text-align: center;
 }
 
+.imageheadshot {
+    width: 30%;
+    height: auto;
+}
+
+.images {
+    width: 100%;
+    height: auto;
+}
+
 .AboutMe {
-    position: static;
     justify-content: center;
     align-content: center;
-    height: auto;
-    width: auto;
     text-align: center;
 }
 
@@ -136,14 +103,13 @@ button {
     width: 252px;
     cursor: pointer;
     background-color: #007b84;
+    border-radius: 20px;
 }
 
 .CaseStudy1, .CaseStudy2, .CaseStudy3 {
-    height: auto;
-    max-width: 735px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border: solid;
     border-color: #013863;
@@ -155,6 +121,10 @@ button {
 .CaseStudy1 {
     margin-top: 20px;
 }
+
+.CaseStudyText {
+    width: 65%;
+} 
 
 .CaseStudyText h1 {
     text-align: left;
@@ -171,9 +141,7 @@ button {
     }
 
 .CaseStudyImg {
-    justify-content: end;
-    height: auto;
-    width: auto;
+    width: 30%;
 }
 
 #bottomLeft {
@@ -186,7 +154,6 @@ button {
 #bottomRight {
     justify-content: center;
     align-content: center;
-    max-width: 735px;
     padding: 20px;
     margin: 20px;
 }
@@ -226,12 +193,6 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .containerGrid {
-        grid-template-rows: auto auto auto auto;
-        grid-template-columns: 500px;
-        grid-template-areas: 
-        "topLeft"
-        "topRight"
-        "bottomLeft"
-        "bottomRight";
+        grid-template-columns: 100%;
     }
 }
