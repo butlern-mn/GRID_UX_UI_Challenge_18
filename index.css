@@ -192,7 +192,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    .containerGrid {
+    #containerGrid {
         grid-template-columns: 100%;
     }
 }
