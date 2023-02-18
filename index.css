@@ -34,6 +34,16 @@ button.navbarbutton {
     margin: 25px;
     cursor: pointer;
     background-color: #007b84;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+.navbarbutton:hover {
+    background-color: #013863;
+}
+
+.navbarbutton:active {
+    background-color: #013863;
 }
 
 #containerGrid {
@@ -89,7 +99,7 @@ button.navbarbutton {
     color: black;
 }
 
-button {
+button.contactButton {
     border: none;
     color: white;
     padding: 1%;
@@ -105,6 +115,11 @@ button {
     cursor: pointer;
     background-color: #007b84;
     border-radius: 20px;
+    transition: 1s ease;
+}
+
+.contactButton:hover {
+    background-color: #013863;
 }
 
 .CaseStudy1, .CaseStudy2, .CaseStudy3 {
@@ -203,5 +218,24 @@ footer {
 @media only screen and (max-width: 600px) {
     #containerGrid {
         grid-template-columns: 100%;
+    }
+    footer img {
+        display: none;
+    }
+
+    header a {
+        display: none;
+    }
+
+    button.navbarbutton {
+        margin: 10px;
+    }
+
+    .FooterLinkedText a {
+        font-size: 12px;
+    }
+
+    .Copyright {
+        font-size: 12px;
     }
 }
