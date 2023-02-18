@@ -23,8 +23,8 @@ nav {
 button.navbarbutton {
     border: solid;
     border-color: #013863;
-    height: 30px;
-    width: 90px;
+    height: 35px;
+    width: 95px;
     color: white;
     padding: 1%;
     text-align: center;
@@ -44,7 +44,7 @@ button.navbarbutton {
     grid-template-columns: 1fr 1fr;
 }
 
-.headshot {
+.headshotarea {
     justify-content: start;
     align-content: center;
     width: 100%;
@@ -52,7 +52,8 @@ button.navbarbutton {
 }
 
 .imageheadshot {
-    width: 30%;
+    width: 40%;
+    margin-top: 25px;
     height: auto;
 }
 
@@ -147,15 +148,23 @@ button {
 #bottomLeft {
     justify-content: center;
     align-content: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.iconimages {
+    width: 100%;
 }
 
 #bottomRight {
     justify-content: center;
     align-content: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.skillsimage {
+    width: 100%;
 }
 
 
@@ -188,7 +197,7 @@ footer {
     font-style: bold;
     color: white;
     padding: 16px;
-    margin: 15px;
+    margin: 10px;
 }
 
 @media only screen and (max-width: 600px) {
