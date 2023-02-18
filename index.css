@@ -29,7 +29,7 @@ button.navbarbutton {
     padding: 1%;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     font-family: Acme;
     margin: 25px;
     cursor: pointer;
@@ -195,7 +195,7 @@ footer {
 
 .Copyright {
     font-family: Arimo;
-    font-size: 16px;
+    font-size: 14px;
     font-style: bold;
     color: white;
     width: 40%;
@@ -207,8 +207,8 @@ footer {
 }
 
 .FooterLinkedText a {
-    font-family: Arimo;
-    font-size: 16px;
+    font-family: Acme;
+    font-size: 14px;
     font-style: bold;
     color: white;
     padding: 16px;
